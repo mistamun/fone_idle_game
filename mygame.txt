@@ -24,7 +24,7 @@ Buildings
     on tick:yield 0.1 laps
     cost:10 lap
 
-  *car
+  *driver
     name:Driver
     desc:Aims your cars correctly around the corners with purpose.
     on tick:yield 1 laps
