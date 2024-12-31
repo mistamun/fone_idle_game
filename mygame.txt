@@ -1,0 +1,20 @@
+Let's make a game!
+  name:F1 Clicker
+  desc:Road to F1 GOATdom in 10 years or less
+  created:31/12/2024
+  updated:31/M12/2024
+  version:0.01
+
+Resources
+  *lap
+    name:Lap
+    desc:A lap around a track.
+
+Upgrades
+  *softTyres
+    name:A set of Soft tyres
+    desc:Unlocks the ability to lap faster!
+    
+  *drs
+    name:DRS
+    desc:You can lap even faster!
