@@ -18,7 +18,7 @@ Buttons
     on click:yield 0.1 lap
 
 Buildings
-  *driver
+  *car
     name:Car
     desc:Goes around the track on its own through the power of random motion and quantum mechanics.
     on tick:yield 0.1 laps
