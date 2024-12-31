@@ -15,6 +15,7 @@ Buttons
   *tyre
     name:Tyre
     icon:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/_1683d7cc-225e-42d2-ab79-d2db9bf15ff8.jpeg
+    icon class:shadowed
     class:bigButton hasFlares
     desc:Click this to rotate your tyres.
     on click:yield 0.1 lap
