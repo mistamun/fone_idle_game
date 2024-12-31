@@ -1,6 +1,7 @@
 Let's make a game!
   name:F1 Clicker
   desc:Road to F1 GOATdom in 10 years or less
+  author:mistamun
   created:31/12/2024
   updated:31/M12/2024
   version:0.01
@@ -8,13 +9,30 @@ Let's make a game!
 Resources
   *lap
     name:Lap
-    desc:A lap around a track.
+    desc:A lap around a race track.
+
+Buttons
+  *tyre
+    name:Tyre
+    desc:Click this to rotate your tyres.
+    on click:yield 0.1 lap
+
+Buildings
+  *driver
+    name:Car
+    desc:Goes around the track on its own through the power of random motion and quantum mechanics.
+    on tick:yield 0.1 laps
+    cost:10 lap
+
+  *driver
+    name:Driver
+    desc:Aims your cars correctly around the corners with purpose.
+    on tick:yield 1 laps
+    cost:100 lap
 
 Upgrades
   *softTyres
     name:A set of Soft tyres
     desc:Unlocks the ability to lap faster!
-    
-  *drs
-    name:DRS
-    desc:You can lap even faster!
+    passive:multiply yield of car by 2
+    cost:1000 lap
