@@ -14,6 +14,7 @@ Resources
 Buttons
   *tyre
     name:Tyre
+    icon:_1683d7cc-225e-42d2-ab79-d2db9bf15ff8.jpeg
     desc:Click this to rotate your tyres.
     on click:yield 0.1 lap
 
