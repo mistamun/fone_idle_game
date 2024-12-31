@@ -21,13 +21,13 @@ Buildings
   *car
     name:Car
     desc:Goes around the track on its own through the power of random motion and quantum mechanics.
-    on tick:yield 0.1 laps
+    on tick:yield 0.1 lap
     cost:10 lap
 
   *driver
     name:Driver
     desc:Aims your cars correctly around the corners with purpose.
-    on tick:yield 1 laps
+    on tick:yield 1 lap
     cost:100 lap
 
 Upgrades
