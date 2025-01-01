@@ -126,7 +126,7 @@ Buttons
     end
     class:bigButton radiusSquare
     icon class:radiusSquare
-    icon:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/_1683d7cc-225e-42d2-ab79-d2db9bf15ff8.jpeg
+    icon:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/tyre.jpg
     no text
 
 Buildings
