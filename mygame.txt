@@ -178,20 +178,20 @@ Buildings
     on tick:yield 1000000 lap
     cost:100000000 lap
 
-  *wind_tunnel
+  *windTunnel
     name:Wind Tunnel
     desc:A very expensive machine to keep your Engineers and Supercomputers cool in the summer.
     on tick:yield 10000000 lap
     cost:1000000000 lap
 
 Upgrades
-  *disc_brakes
+  *discBrakes
     name:Brake discs and pads
     desc:Glowing brakes gain make the car faster because of how cool they look.
     passive:multiply yield of car by 2
     cost:1000 lap
 
-  *rear_engine
+  *rearEngine
     name:Rear engine layout
     desc:Cars are much cheaper due to shorter prop shafts.
     passive:multiply yield of car by 2
@@ -215,55 +215,55 @@ Upgrades
     passive:multiply yield of car by 2
     cost:10000000 lap
 
-  *four_by_four
+  *fourByFour
     name:4 wheel drive
     desc:Obscure technology used that one time at Anderstorp when it snowed for for the Swedish GP.
     passive:multiply yield of car by 2
     cost:100000000 lap
 
-  *side_rads
+  *sideRads
     name:Side radiators
 
   *seatbelts
     name:six point seatbelts
 
-  *four_wheel_steering
+  *fourWheelSteering
     name:4 wheel drive
     desc:At some point, someone grew suspicious of what they learned about friction in high school physics.
     passive:multiply yield of car by 2
     cost:10000000 lap
 
-  *four_by_six
+  *fourBySix
     name:4 wheel drive
     desc:At some point, someone grew suspicious of what they learned about friction in high school physics.
     passive:multiply yield of car by 2
     cost:10000000 lap
 
-  *ground_effect
+  *groundEffect
     name:ground effect
 
   *turbo
     name:turbo charger
 
-  *carbon_fibre
+  *carbonFibre
     name:carbon fibre
 
-  *active_susp
+  *activeSusp
     name:active suspension
 
-  *carbon_brakes
+  *carbonBrakes
     name:carbon brakes
 
-  *traction_control
+  *tractionControl
     name:traction control
 
-  *semi_auto_gbox
+  *semiAutoGBox
     name:paddle shift gearbox
 
   *abs
     name:ABS
 
-  *steer_brakes
+  *steerBrakes
     name:Steer brakes
 
   *hans
@@ -272,7 +272,7 @@ Upgrades
   *kers
     name:KERS
 
-  *f_duct
+  *fDuct
     name:F-Duct
 
   *drs
