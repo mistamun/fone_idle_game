@@ -33,9 +33,148 @@ Buildings
     on tick:yield 1 lap
     cost:100 lap
 
+  *engineer
+    name:Engineer
+    desc:Tunes your cars to the unthinkable degree of detail (actually to the tenth of a millimiter).
+    on tick:yield 10 lap
+    cost:1000 lap
+
+  *principal
+    name:Team Principal
+    desc:Keeps your Drivers and Engineers focused on the job, they're easily distracted.
+    on tick:yield 100 lap
+    cost:10000 lap
+
+  *sponsor
+    name:Sponsor
+    desc:A clueless sponsor who's rich and loves the "sport" and has been able to convince his board of directors that this will yield some return in publicity.
+    on tick:yield 1000 lap
+    cost:100000 lap
+
+  *owner
+    name:Team Owner
+    desc:Some one has to cover that hole in the budget, right?
+    on tick:yield 10000 lap
+    cost:1000000 lap
+
+  *supercomputer
+    name:Supercomputer
+    desc:Unless they're Newey, Engineers need computers to get it done.
+    on tick:yield 100000 lap
+    cost:10000000 lap
+
+  *simulator
+    name:Simulator
+    desc:A very expensive machine to keep your spare Drivers enternained.
+    on tick:yield 1000000 lap
+    cost:100000000 lap
+
+  *wind_tunnel
+    name:Wind Tunnel
+    desc:A very expensive machine to keep your Engineers and Supercomputers cool in the summer.
+    on tick:yield 10000000 lap
+    cost:1000000000 lap
+
 Upgrades
-  *softTyres
-    name:A set of Soft tyres
-    desc:Unlocks the ability to lap faster!
+  *disc_brakes
+    name:Brake discs and pads
+    desc:Glowing brakes gain make the car faster because of how cool they look.
     passive:multiply yield of car by 2
     cost:1000 lap
+
+  *rear_engine
+    name:Rear engine layout
+    desc:Cars are much cheaper due to shorter prop shafts.
+    passive:multiply yield of car by 2
+    cost:10000 lap
+
+  *monocoque
+    name:Monocoque chassis
+    desc:Mono what?
+    passive:multiply yield of car by 2
+    cost:100000 lap
+
+  *wings
+    name:Front and rear wings
+    desc:Patented and sold exclusively by Red Bull Racing.
+    passive:multiply yield of car by 2
+    cost:1000000 lap
+
+  *slicks
+    name:Slick Tyres
+    desc:At some point, someone grew suspicious of what they learned about friction in high school physics.
+    passive:multiply yield of car by 2
+    cost:10000000 lap
+
+  *four_by_four
+    name:4 wheel drive
+    desc:Obscure technology used that one time at Anderstorp when it snowed for for the Swedish GP.
+    passive:multiply yield of car by 2
+    cost:100000000 lap
+
+  *side_rads
+    name:Side radiators
+
+  *seatbelts
+    name:six point seatbelts
+
+  *four_wheel_steering
+    name:4 wheel drive
+    desc:At some point, someone grew suspicious of what they learned about friction in high school physics.
+    passive:multiply yield of car by 2
+    cost:10000000 lap
+
+  *four_by_six
+    name:4 wheel drive
+    desc:At some point, someone grew suspicious of what they learned about friction in high school physics.
+    passive:multiply yield of car by 2
+    cost:10000000 lap
+
+  *ground_effect
+    name:ground effect
+
+  *turbo
+    name:turbo charger
+
+  *carbon_fibre
+    name:carbon fibre
+
+  *active_susp
+    name:active suspension
+
+  *carbon_brakes
+    name:carbon brakes
+
+  *traction_control
+    name:traction control
+
+  *semi_auto_gbox
+    name:paddle shift gearbox
+
+  *abs
+    name:ABS
+
+  *steer_brakes
+    name:Steer brakes
+
+  *hans
+    name:HANS
+
+  *kers
+    name:KERS
+
+  *f_duct
+    name:F-Duct
+
+  *drs
+    name:DRS
+
+  *hybrid
+    name:Hybrid engine
+
+  *halo
+    name:Halo
+
+  *das
+    name:DAS
+
