@@ -6,6 +6,111 @@ Let's make a game!
   updated:31/M12/2024
   version:0.01
 
+CSS
+#game {
+	background: #111;
+	background-image: linear-gradient(35deg, hsla(0, 0%, 17%, 1), 80%, hsla(0, 0%, 17%, 0.6)), linear-gradient(transparent calc(50% - 1px), #fff 50%, transparent calc(50% + 1px) 100%), linear-gradient(to right, transparent calc(50% - 1px), #fff 50%, transparent calc(50% + 1px) 100%);
+	background-size: 100% 100%, 2vw 2vw, 2vw 2vw;
+	font-family: Helvetica, Lato, "sans serif";
+	color:black;
+}
+.radiusSquare {
+	border-radius:50%;
+}
+@keyframes Rotate {
+	from {
+		tranform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+.bigButton {
+	background-color:#000000;
+}
+.Rotate {
+	animation: 1s Rotate;
+}
+ 
+#box-upgrades {
+	top: 43px;
+}
+.box-header, .box-footer 
+{
+	padding: 8px;
+	font-size: 15px;
+	font-weight: bold;
+}
+#box-upgradeButtons {
+	width: 50%;
+	left: 50%;
+	height: 43px;
+	overflow-y:scroll;
+}
+ 
+.upgradeSwitch {
+	height: 43px;
+	width: 50%;
+	margin: 0px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+	background-color: rgba(255, 255, 255, 0.7);
+	color: black
+}
+ 
+#box-store {
+	bottom: 40%;
+	border-left: 4px ridge #615c59;
+	backdrop-filter: blur(3px);
+}
+ 
+#box-achbox {
+	border: 4px ridge #615c59;
+	border-radius: 0px 0px 14px 0px;
+	top: 60%;
+	right: 0%;
+	width: 40%;
+	height: 40%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-bottom: 48px;
+	font-size: 14px;
+	position: fixed;
+	box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 1), inset 0px 0px 6px 1px rgba(121,116,114,0.75);
+	backdrop-filter: blur(3px);
+}
+
+Layout
+*main
+  contains:res, buttons
+  *res
+	contains:Resources
+	class:fullWidth
+  *buttons
+	contains:Buttons
+*store
+contains:buildings, upgrades, upgradeButtons
+  *buildings
+	contains:BulkDisplay, Buildings
+	header:Buildings
+	tooltip origin:left
+  *upgrades
+	contains:Upgrades
+	header:Upgrades
+	costs:hide
+	names:hide
+	*upgradeButtons
+	contains:tag:upgradeSwitcher
+*achbox
+	header:Achievements
+	contains:tag:achievement, tag:deepachievement
+	class:achcss
+	tooltip origin:top
+	names:hide
+	costs:hide
+
 Resources
   *lap
     name:Lap
@@ -14,11 +119,15 @@ Resources
 Buttons
   *tyre
     name:Tyre
-    icon:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/_1683d7cc-225e-42d2-ab79-d2db9bf15ff8.jpeg
-    icon class:shadowed
-    class:bigButton hasFlares
     desc:Click this to rotate your tyres.
-    on click:yield 0.1 lap
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    icon:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/_1683d7cc-225e-42d2-ab79-d2db9bf15ff8.jpeg
+    no text
 
 Buildings
   *car
