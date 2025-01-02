@@ -287,3 +287,464 @@ Upgrades
   *das
     name:DAS
 
+
+
+  *farina
+    name:Giuseppe Farina
+    cost:200
+
+  *fangio
+    name:Juan Manuel Fangio
+    cost:400
+
+  *parsons
+    name:Johnnie Parsons
+    cost:800
+
+  *wallard
+    name:Lee Wallard
+    cost:2000
+
+  *fagioli
+    name:Luigi Fagioli
+    cost:4000
+
+  *gonzalez
+    name:José Froilán González
+    cost:8000
+
+  *ascari
+    name:Alberto Ascari
+    cost:2e4
+
+  *taruffi
+    name:Piero Taruffi
+    cost:4e4
+
+  *ruttman
+    name:Troy Ruttman
+    cost:8e4
+
+  *vukovich
+    name:Bill Vukovich
+    cost:2e5
+
+  *hawthron
+    name:Mike Hawthorn
+    cost:4e5
+
+  *trintignant
+    name:Maurice Trintignant
+    cost:8e5
+
+  *sweikert
+    name:Bob Sweikert
+    cost:2e6
+
+  *moss
+    name:Stirling Moss
+    cost:4e6
+
+  *musso
+    name:Luigi Musso
+    cost:8e6
+
+  *flaherty
+    name:Pat Flaherty
+    cost:2e7
+
+  *collins
+    name:Peter Collins
+    cost:4e7
+
+  *hanks
+    name:Sam Hanks
+    cost:8e7
+
+  *brooks
+    name:Tony Brooks
+    cost:2e8
+
+  *bryan
+    name:Jimmy Bryan
+    cost:4e8
+
+  *jbrabham
+    name:Jack Brabham
+    cost:8e8
+
+  *ward
+    name:Rodger Ward
+    cost:2e9
+
+  *bonnier
+    name:Jo Bonnier
+    cost:4e9
+
+  *bmclaren
+    name:Bruce McLaren
+    cost:8e9
+
+  *rathmann
+    name:Jim Rathmann
+    cost:2e10
+
+  *phill
+    name:Phil Hill
+    cost:4e10
+
+  *trips
+    name:Wolfgang von Trips
+    cost:8e10
+
+  *baghetti
+    name:Giancarlo Baghetti
+    cost:2e11
+
+  *iireland
+    name:Innes Ireland
+    cost:4e11
+
+  *ghill
+    name:Graham Hill
+    cost:8e11
+
+  *clark
+    name:Jim Clark
+    cost:2e12
+
+  *dgurney
+    name:Dan Gurney
+    cost:4e12
+
+  *surtees
+    name:John Surtees
+    cost:8e12
+
+  *bandini
+    name:Lorenzo Bandini
+    cost:2e13
+
+  *jstewart
+    name:Jackie Stewart
+    cost:4e13
+
+  *ginther
+    name:Richie Ginther
+    cost:8e13
+
+  *scarfiotti
+    name:Ludovico Scarfiotti
+    cost:2e14
+
+  *rodriguez
+    name:Pedro Rodríguez
+    cost:4e14
+
+  *hulme
+    name:Denny Hulme
+    cost:8e14
+
+  *ickx
+    name:Jacky Ickx
+    cost:2e15
+
+  *siffert
+    name:Jo Siffert
+    cost:4e15
+
+  *rindt
+    name:Jochen Rindt
+    cost:8e15
+
+  *regazzoni
+    name:Clay Regazzoni
+    cost:2e16
+
+  *fittipaldi
+    name:Emerson Fittipaldi
+    cost:4e16
+
+  *andretti
+    name:Mario Andretti
+    cost:8e16
+
+  *gethin
+    name:Peter Gethin
+    cost:2e17
+
+  *cevert
+    name:François Cevert
+    cost:4e17
+
+  *beltoise
+    name:Jean-Pierre Beltoise
+    cost:8e17
+
+  *peterson
+    name:Ronnie Peterson
+    cost:2e18
+
+  *revson
+    name:Peter Revson
+    cost:4e18
+
+  *reutemann
+    name:Carlos Reutemann
+    cost:8e18
+
+  *nlauda
+    name:Niki Lauda
+    cost:2e19
+
+  *scheckter
+    name:Jody Scheckter
+    cost:4e19
+
+  *jcpace
+    name:José Carlos Pace
+    cost:8e19
+
+  *mass
+    name:Jochen Mass
+    cost:2e20
+
+  *hunt
+    name:James Hunt
+    cost:4e20
+
+  *brambilla
+    name:Vittorio Brambilla
+    cost:8e20
+
+  *watson
+    name:John Watson
+    cost:2e21
+
+  *nilsson
+    name:Gunnar Nilsson
+    cost:4e21
+
+  *laffite
+    name:Jacques Laffite
+    cost:8e21
+
+  *jones
+    name:Alan Jones
+    cost:2e22
+
+  *depailler
+    name:Patrick Depailler
+    cost:4e22
+
+  *gvilleneuve
+    name:Gilles Villeneuve
+    cost:8e22
+
+  *jabouille
+    name:Jean-Pierre Jabouille
+    cost:2e23
+
+  *arnoux
+    name:René Arnoux
+    cost:4e23
+
+  *piquet
+    name:Nelson Piquet
+    cost:8e23
+
+  *pironi
+    name:Didier Pironi
+    cost:2e24
+
+  *prost
+    name:Alain Prost
+    cost:4e24
+
+  *patrese
+    name:Riccardo Patrese
+    cost:8e24
+
+  *tambay
+    name:Patrick Tambay
+    cost:2e25
+
+  *deangelis
+    name:Elio de Angelis
+    cost:4e25
+
+  *krosberg
+    name:Keke Rosberg
+    cost:8e25
+
+  *alboreto
+    name:Michele Alboreto
+    cost:2e26
+
+  *senna
+    name:Ayrton Senna
+    cost:4e26
+
+  *mansell
+    name:Nigel Mansell
+    cost:8e26
+
+  *berger
+    name:Gerhard Berger
+    cost:2e27
+
+  *boutsen
+    name:Thierry Boutsen
+    cost:4e27
+
+  *nannini
+    name:Alessandro Nannini
+    cost:8e27
+
+  *mschumacher
+    name:Michael Schumacher
+    cost:2e28
+
+  *dhill
+    name:Damon Hill
+    cost:4e28
+
+  *alesi
+    name:Jean Alesi
+    cost:8e28
+
+  *herbert
+    name:Johnny Herbert
+    cost:2e29
+
+  *coulthard
+    name:David Coulthard
+    cost:4e29
+
+  *jvilleneuve
+    name:Jacques Villeneuve
+    cost:8e29
+
+  *panis
+    name:Olivier Panis
+    cost:2e30
+
+  *frentzen
+    name:Heinz-Harald Frentzen
+    cost:4e30
+
+  *hakkinen
+    name:Mika Häkkinen
+    cost:8e30
+
+  *irvine
+    name:Eddie Irvine
+    cost:2e31
+
+  *barrichello
+    name:Rubens Barrichello
+    cost:4e31
+
+  *rschumacher
+    name:Ralf Schumacher
+    cost:8e31
+
+  *montoya
+    name:Juan Pablo Montoya
+    cost:2e32
+
+  *raikkonen
+    name:Kimi Räikkönen
+    cost:4e32
+
+  *fisichella
+    name:Giancarlo Fisichella
+    cost:8e32
+
+  *alonso
+    name:Fernando Alonso
+    cost:2e33
+
+  *trulli
+    name:Jarno Trulli
+    cost:4e33
+
+  *jbutton
+    name:Jenson Button
+    cost:8e33
+
+  *massa
+    name:Felipe Massa
+    cost:2e34
+
+  *hamilton
+    name:Lewis Hamilton
+    cost:4e34
+
+  *kubica
+    name:Robert Kubica
+    cost:8e34
+
+  *kovalainen
+    name:Heikki Kovalainen
+    cost:2e35
+
+  *vettel
+    name:Sebastian Vettel
+    cost:4e35
+
+  *webber
+    name:Mark Webber
+    cost:8e35
+
+  *nrosberg
+    name:Nico Rosberg
+    cost:2e36
+
+  *maldonado
+    name:Pastor Maldonado
+    cost:4e36
+
+  *ricciardo
+    name:Daniel Ricciardo
+    cost:8e36
+
+  *verstappen
+    name:Max Verstappen
+    cost:2e37
+
+  *bottas
+    name:Valtteri Bottas
+    cost:4e37
+
+  *cleclerc
+    name:Charles Leclerc
+    cost:8e37
+
+  *gasly
+    name:Pierre Gasly
+    cost:2e38
+
+  *perez
+    name:Sergio Pérez
+    cost:4e38
+
+  *ocon
+    name:Esteban Ocon
+    cost:8e38
+
+  *sainzjr
+    name:Carlos Sainz Jr.
+    cost:2e39
+
+  *russel
+    name:George Russell
+    cost:4e39
+
+  *norris
+    name:Lando Norris
+    cost:8e39
+
+  *piastri
+    name:Oscar Piastri
+    cost:2e40
