@@ -6,6 +6,9 @@ Let's make a game!
   updated:31/M12/2024
   version:0.01
 
+Settings
+  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/icons.png
+
 CSS
 #game {
 	background: #111;
@@ -291,6 +294,7 @@ Upgrades
 
   *farina
     name:Giuseppe Farina
+    icon:icons[0,0]
     cost:200
     on earn:hide this
     req:lap>=20
@@ -298,684 +302,798 @@ Upgrades
 
   *fangio
     name:Juan Manuel Fangio
+    icon:icons[1,0]
     cost:400
     req:lap>=40
     passive:multiply yield of :Buildings by 1.1
 
   *parsons
     name:Johnnie Parsons
+    icon:icons[2,0]
     cost:800
     req:lap>=80
     passive:multiply yield of :Buildings by 1.03
 
   *wallard
     name:Lee Wallard
+    icon:icons[3,0]
     cost:2000
     req:lap>=200
     passive:multiply yield of :Buildings by 1.03
 
   *fagioli
     name:Luigi Fagioli
+    icon:icons[4,0]
     cost:4000
     req:lap>=400
     passive:multiply yield of :Buildings by 1.03
 
   *gonzalez
     name:José Froilán González
+    icon:icons[5,0]
     cost:8000
     req:lap>=800
     passive:multiply yield of :Buildings by 1.03
 
   *ascari
     name:Alberto Ascari
+    icon:icons[6,0]
     cost:2e4
     req:lap>=2e3
     passive:multiply yield of :Buildings by 1.05
 
   *taruffi
     name:Piero Taruffi
+    icon:icons[7,0]
     cost:4e4
     req:lap>=4e3
     passive:multiply yield of :Buildings by 1.03
 
   *ruttman
     name:Troy Ruttman
+    icon:icons[8,0]
     cost:8e4
     req:lap>=8e3
     passive:multiply yield of :Buildings by 1.03
 
   *vukovich
     name:Bill Vukovich
+    icon:icons[9,0]
     cost:2e5
     req:lap>=2e4
     passive:multiply yield of :Buildings by 1.03
 
   *hawthron
     name:Mike Hawthorn
+    icon:icons[10,0]
     cost:4e5
     req:lap>=4e4
     passive:multiply yield of :Buildings by 1.05
 
   *trintignant
     name:Maurice Trintignant
+    icon:icons[11,0]
     cost:8e5
     req:lap>=8e4
     passive:multiply yield of :Buildings by 1.03
 
   *sweikert
     name:Bob Sweikert
+    icon:icons[12,0]
     cost:2e6
     req:lap>=2e5
     passive:multiply yield of :Buildings by 1.03
 
   *moss
     name:Stirling Moss
+    icon:icons[13,0]
     cost:4e6
     req:lap>=4e5
     passive:multiply yield of :Buildings by 1.03
 
   *musso
     name:Luigi Musso
+    icon:icons[14,0]
     cost:8e6
     req:lap>=8e5
     passive:multiply yield of :Buildings by 1.03
 
   *flaherty
     name:Pat Flaherty
+    icon:icons[15,0]
     cost:2e7
     req:lap>=2e6
     passive:multiply yield of :Buildings by 1.03
 
   *collins
     name:Peter Collins
+    icon:icons[16,0]
     cost:4e7
     req:lap>=4e6
     passive:multiply yield of :Buildings by 1.03
 
   *hanks
     name:Sam Hanks
+    icon:icons[17,0]
     cost:8e7
     req:lap>=8e6
     passive:multiply yield of :Buildings by 1.03
 
   *brooks
     name:Tony Brooks
+    icon:icons[18,0]
     cost:2e8
     req:lap>=2e7
     passive:multiply yield of :Buildings by 1.03
 
   *bryan
     name:Jimmy Bryan
+    icon:icons[19,0]
     cost:4e8
     req:lap>=4e7
     passive:multiply yield of :Buildings by 1.03
 
   *jbrabham
     name:Jack Brabham
+    icon:icons[20,0]
     cost:8e8
     req:lap>=8e7
     passive:multiply yield of :Buildings by 1.1
 
   *ward
     name:Rodger Ward
+    icon:icons[21,0]
     cost:2e9
     req:lap>=2e8
     passive:multiply yield of :Buildings by 1.03
 
   *bonnier
     name:Jo Bonnier
+    icon:icons[22,0]
     cost:4e9
     req:lap>=4e8
     passive:multiply yield of :Buildings by 1.03
 
   *bmclaren
     name:Bruce McLaren
+    icon:icons[23,0]
     cost:8e9
     req:lap>=8e8
     passive:multiply yield of :Buildings by 1.03
 
   *rathmann
     name:Jim Rathmann
+    icon:icons[24,0]
     cost:2e10
     req:lap>=2e9
     passive:multiply yield of :Buildings by 1.03
 
   *phill
     name:Phil Hill
+    icon:icons[25,0]
     cost:4e10
     req:lap>=4e9
     passive:multiply yield of :Buildings by 1.05
 
   *trips
     name:Wolfgang von Trips
+    icon:icons[26,0]
     cost:8e10
     req:lap>=8e9
     passive:multiply yield of :Buildings by 1.03
 
   *baghetti
     name:Giancarlo Baghetti
+    icon:icons[27,0]
     cost:2e11
     req:lap>=2e10
     passive:multiply yield of :Buildings by 1.03
 
   *iireland
     name:Innes Ireland
+    icon:icons[28,0]
     cost:4e11
     req:lap>=4e10
     passive:multiply yield of :Buildings by 1.03
 
   *ghill
     name:Graham Hill
+    icon:icons[29,0]
     cost:8e11
     req:lap>=8e10
     passive:multiply yield of :Buildings by 1.1
 
   *clark
     name:Jim Clark
+    icon:icons[30,0]
     cost:2e12
     req:lap>=2e11
     passive:multiply yield of :Buildings by 1.1
 
   *dgurney
     name:Dan Gurney
+    icon:icons[31,0]
     cost:4e12
     req:lap>=4e11
     passive:multiply yield of :Buildings by 1.03
 
   *surtees
     name:John Surtees
+    icon:icons[32,0]
     cost:8e12
     req:lap>=8e11
     passive:multiply yield of :Buildings by 1.05
 
   *bandini
     name:Lorenzo Bandini
+    icon:icons[33,0]
     cost:2e13
     req:lap>=2e12
     passive:multiply yield of :Buildings by 1.03
 
   *jstewart
     name:Jackie Stewart
+    icon:icons[34,0]
     cost:4e13
     req:lap>=4e12
     passive:multiply yield of :Buildings by 1.1
 
   *ginther
     name:Richie Ginther
+    icon:icons[35,0]
     cost:8e13
     req:lap>=8e12
     passive:multiply yield of :Buildings by 1.03
 
   *scarfiotti
     name:Ludovico Scarfiotti
+    icon:icons[0,1]
     cost:2e14
     req:lap>=2e13
     passive:multiply yield of :Buildings by 1.03
 
   *rodriguez
     name:Pedro Rodríguez
+    icon:icons[1,1]
     cost:4e14
     req:lap>=4e13
     passive:multiply yield of :Buildings by 1.03
 
   *hulme
     name:Denny Hulme
+    icon:icons[2,1]
     cost:8e14
     req:lap>=8e13
     passive:multiply yield of :Buildings by 1.05
 
   *ickx
     name:Jacky Ickx
+    icon:icons[3,1]
     cost:2e15
     req:lap>=2e14
     passive:multiply yield of :Buildings by 1.03
 
   *siffert
     name:Jo Siffert
+    icon:icons[4,1]
     cost:4e15
     req:lap>=4e14
     passive:multiply yield of :Buildings by 1.03
 
   *rindt
     name:Jochen Rindt
+    icon:icons[5,1]
     cost:8e15
     req:lap>=8e14
     passive:multiply yield of :Buildings by 1.05
 
   *regazzoni
     name:Clay Regazzoni
+    icon:icons[6,1]
     cost:2e16
     req:lap>=2e15
     passive:multiply yield of :Buildings by 1.03
 
   *fittipaldi
     name:Emerson Fittipaldi
+    icon:icons[7,1]
     cost:4e16
     req:lap>=4e15
     passive:multiply yield of :Buildings by 1.1
 
   *andretti
     name:Mario Andretti
+    icon:icons[8,1]
     cost:8e16
     req:lap>=8e15
     passive:multiply yield of :Buildings by 1.05
 
   *gethin
     name:Peter Gethin
+    icon:icons[9,1]
     cost:2e17
     req:lap>=2e16
     passive:multiply yield of :Buildings by 1.03
 
   *cevert
     name:François Cevert
+    icon:icons[10,1]
     cost:4e17
     req:lap>=4e16
     passive:multiply yield of :Buildings by 1.03
 
   *beltoise
     name:Jean-Pierre Beltoise
+    icon:icons[11,1]
     cost:8e17
     req:lap>=8e16
     passive:multiply yield of :Buildings by 1.03
 
   *peterson
     name:Ronnie Peterson
+    icon:icons[12,1]
     cost:2e18
     req:lap>=2e17
     passive:multiply yield of :Buildings by 1.03
 
   *revson
     name:Peter Revson
+    icon:icons[13,1]
     cost:4e18
     req:lap>=4e17
     passive:multiply yield of :Buildings by 1.03
 
   *reutemann
     name:Carlos Reutemann
+    icon:icons[14,1]
     cost:8e18
     req:lap>=8e17
     passive:multiply yield of :Buildings by 1.03
 
   *nlauda
     name:Niki Lauda
+    icon:icons[15,1]
     cost:2e19
     req:lap>=2e18
     passive:multiply yield of :Buildings by 1.1
 
   *scheckter
     name:Jody Scheckter
+    icon:icons[16,1]
     cost:4e19
     req:lap>=4e18
     passive:multiply yield of :Buildings by 1.05
 
   *jcpace
     name:José Carlos Pace
+    icon:icons[17,1]
     cost:8e19
     req:lap>=8e18
     passive:multiply yield of :Buildings by 1.03
 
   *mass
     name:Jochen Mass
+    icon:icons[18,1]
     cost:2e20
     req:lap>=2e19
     passive:multiply yield of :Buildings by 1.03
 
   *hunt
     name:James Hunt
+    icon:icons[19,1]
     cost:4e20
     req:lap>=4e19
     passive:multiply yield of :Buildings by 1.05
 
   *brambilla
     name:Vittorio Brambilla
+    icon:icons[20,1]
     cost:8e20
     req:lap>=8e19
     passive:multiply yield of :Buildings by 1.03
 
   *watson
     name:John Watson
+    icon:icons[21,1]
     cost:2e21
     req:lap>=2e20
     passive:multiply yield of :Buildings by 1.03
 
   *nilsson
     name:Gunnar Nilsson
+    icon:icons[22,1]
     cost:4e21
     req:lap>=4e20
     passive:multiply yield of :Buildings by 1.03
 
   *laffite
     name:Jacques Laffite
+    icon:icons[23,1]
     cost:8e21
     req:lap>=8e20
     passive:multiply yield of :Buildings by 1.03
 
   *jones
     name:Alan Jones
+    icon:icons[24,1]
     cost:2e22
     req:lap>=2e21
     passive:multiply yield of :Buildings by 1.05
 
   *depailler
     name:Patrick Depailler
+    icon:icons[25,1]
     cost:4e22
     req:lap>=4e21
     passive:multiply yield of :Buildings by 1.03
 
   *gvilleneuve
     name:Gilles Villeneuve
+    icon:icons[26,1]
     cost:8e22
     req:lap>=8e21
     passive:multiply yield of :Buildings by 1.03
 
   *jabouille
     name:Jean-Pierre Jabouille
+    icon:icons[27,1]
     cost:2e23
     req:lap>=2e22
     passive:multiply yield of :Buildings by 1.03
 
   *arnoux
     name:René Arnoux
+    icon:icons[28,1]
     cost:4e23
     req:lap>=4e22
     passive:multiply yield of :Buildings by 1.03
 
   *piquet
     name:Nelson Piquet
+    icon:icons[29,1]
     cost:8e23
     req:lap>=8e22
     passive:multiply yield of :Buildings by 1.1
 
   *pironi
     name:Didier Pironi
+    icon:icons[30,1]
     cost:2e24
     req:lap>=2e23
     passive:multiply yield of :Buildings by 1.03
 
   *prost
     name:Alain Prost
+    icon:icons[31,1]
     cost:4e24
     req:lap>=4e23
     passive:multiply yield of :Buildings by 1.1
 
   *patrese
     name:Riccardo Patrese
+    icon:icons[32,1]
     cost:8e24
     req:lap>=8e23
     passive:multiply yield of :Buildings by 1.03
 
   *tambay
     name:Patrick Tambay
+    icon:icons[33,1]
     cost:2e25
     req:lap>=2e24
     passive:multiply yield of :Buildings by 1.03
 
   *deangelis
     name:Elio de Angelis
+    icon:icons[34,1]
     cost:4e25
     req:lap>=4e24
     passive:multiply yield of :Buildings by 1.03
 
   *krosberg
     name:Keke Rosberg
+    icon:icons[35,1]
     cost:8e25
     req:lap>=8e24
     passive:multiply yield of :Buildings by 1.05
 
   *alboreto
     name:Michele Alboreto
+    icon:icons[0,2]
     cost:2e26
     req:lap>=2e25
     passive:multiply yield of :Buildings by 1.03
 
   *senna
     name:Ayrton Senna
+    icon:icons[1,2]
     cost:4e26
     req:lap>=4e25
     passive:multiply yield of :Buildings by 1.1
 
   *mansell
     name:Nigel Mansell
+    icon:icons[2,2]
     cost:8e26
     req:lap>=8e25
     passive:multiply yield of :Buildings by 1.05
 
   *berger
     name:Gerhard Berger
+    icon:icons[3,2]
     cost:2e27
     req:lap>=2e26
     passive:multiply yield of :Buildings by 1.03
 
   *boutsen
     name:Thierry Boutsen
+    icon:icons[4,2]
     cost:4e27
     req:lap>=4e26
     passive:multiply yield of :Buildings by 1.03
 
   *nannini
     name:Alessandro Nannini
+    icon:icons[5,2]
     cost:8e27
     req:lap>=8e26
     passive:multiply yield of :Buildings by 1.03
 
   *mschumacher
     name:Michael Schumacher
+    icon:icons[6,2]
     cost:2e28
     req:lap>=2e27
     passive:multiply yield of :Buildings by 1.1
 
   *dhill
     name:Damon Hill
+    icon:icons[7,2]
     cost:4e28
     req:lap>=4e27
     passive:multiply yield of :Buildings by 1.05
 
   *alesi
     name:Jean Alesi
+    icon:icons[8,2]
     cost:8e28
     req:lap>=8e27
     passive:multiply yield of :Buildings by 1.03
 
   *herbert
     name:Johnny Herbert
+    icon:icons[9,2]
     cost:2e29
     req:lap>=2e28
     passive:multiply yield of :Buildings by 1.03
 
   *coulthard
     name:David Coulthard
+    icon:icons[10,2]
     cost:4e29
     req:lap>=4e28
     passive:multiply yield of :Buildings by 1.03
 
   *jvilleneuve
     name:Jacques Villeneuve
+    icon:icons[11,2]
     cost:8e29
     req:lap>=8e28
     passive:multiply yield of :Buildings by 1.05
 
   *panis
     name:Olivier Panis
+    icon:icons[12,2]
     cost:2e30
     req:lap>=2e29
     passive:multiply yield of :Buildings by 1.03
 
   *frentzen
     name:Heinz-Harald Frentzen
+    icon:icons[13,2]
     cost:4e30
     req:lap>=4e29
     passive:multiply yield of :Buildings by 1.03
 
   *hakkinen
     name:Mika Häkkinen
+    icon:icons[14,2]
     cost:8e30
     req:lap>=8e29
     passive:multiply yield of :Buildings by 1.1
 
   *irvine
     name:Eddie Irvine
+    icon:icons[15,2]
     cost:2e31
     req:lap>=2e30
     passive:multiply yield of :Buildings by 1.03
 
   *barrichello
     name:Rubens Barrichello
+    icon:icons[16,2]
     cost:4e31
     req:lap>=4e30
     passive:multiply yield of :Buildings by 1.03
 
   *rschumacher
     name:Ralf Schumacher
+    icon:icons[17,2]
     cost:8e31
     req:lap>=8e30
     passive:multiply yield of :Buildings by 1.03
 
   *montoya
     name:Juan Pablo Montoya
+    icon:icons[18,2]
     cost:2e32
     req:lap>=2e31
     passive:multiply yield of :Buildings by 1.03
 
   *raikkonen
     name:Kimi Räikkönen
+    icon:icons[19,2]
     cost:4e32
     req:lap>=4e31
     passive:multiply yield of :Buildings by 1.05
 
   *fisichella
     name:Giancarlo Fisichella
+    icon:icons[20,2]
     cost:8e32
     req:lap>=8e31
     passive:multiply yield of :Buildings by 1.03
 
   *alonso
     name:Fernando Alonso
+    icon:icons[21,2]
     cost:2e33
     req:lap>=2e32
     passive:multiply yield of :Buildings by 1.1
 
   *trulli
     name:Jarno Trulli
+    icon:icons[22,2]
     cost:4e33
     req:lap>=4e32
     passive:multiply yield of :Buildings by 1.03
 
   *jbutton
     name:Jenson Button
+    icon:icons[23,2]
     cost:8e33
     req:lap>=8e32
     passive:multiply yield of :Buildings by 1.03
 
   *massa
     name:Felipe Massa
+    icon:icons[24,2]
     cost:2e34
     req:lap>=2e33
     passive:multiply yield of :Buildings by 1.03
 
   *hamilton
     name:Lewis Hamilton
+    icon:icons[25,2]
     cost:4e34
     req:lap>=4e33
     passive:multiply yield of :Buildings by 1.1
 
   *kubica
     name:Robert Kubica
+    icon:icons[26,2]
     cost:8e34
     req:lap>=8e33
     passive:multiply yield of :Buildings by 1.03
 
   *kovalainen
     name:Heikki Kovalainen
+    icon:icons[27,2]
     cost:2e35
     req:lap>=2e34
     passive:multiply yield of :Buildings by 1.03
 
   *vettel
     name:Sebastian Vettel
+    icon:icons[28,2]
     cost:4e35
     req:lap>=4e34
     passive:multiply yield of :Buildings by 1.1
 
   *webber
     name:Mark Webber
+    icon:icons[29,2]
     cost:8e35
     req:lap>=8e34
     passive:multiply yield of :Buildings by 1.03
 
   *nrosberg
     name:Nico Rosberg
+    icon:icons[30,2]
     cost:2e36
     req:lap>=2e35
     passive:multiply yield of :Buildings by 1.03
 
   *maldonado
     name:Pastor Maldonado
+    icon:icons[31,2]
     cost:4e36
     req:lap>=4e35
     passive:multiply yield of :Buildings by 1.03
 
   *ricciardo
     name:Daniel Ricciardo
+    icon:icons[32,2]
     cost:8e36
     req:lap>=8e35
     passive:multiply yield of :Buildings by 1.03
 
   *verstappen
     name:Max Verstappen
+    icon:icons[33,2]
     cost:2e37
     req:lap>=2e36
     passive:multiply yield of :Buildings by 1.1
 
   *bottas
     name:Valtteri Bottas
+    icon:icons[34,2]
     cost:4e37
     req:lap>=4e36
     passive:multiply yield of :Buildings by 1.03
 
   *cleclerc
     name:Charles Leclerc
+    icon:icons[35,2]
     cost:8e37
     req:lap>=8e36
     passive:multiply yield of :Buildings by 1.03
 
   *gasly
     name:Pierre Gasly
+    icon:icons[0,3]
     cost:2e38
     req:lap>=2e37
     passive:multiply yield of :Buildings by 1.03
 
   *perez
     name:Sergio Pérez
+    icon:icons[1,3]
     cost:4e38
     req:lap>=4e37
     passive:multiply yield of :Buildings by 1.03
 
   *ocon
     name:Esteban Ocon
+    icon:icons[2,3]
     cost:8e38
     req:lap>=8e37
     passive:multiply yield of :Buildings by 1.03
 
   *sainzjr
     name:Carlos Sainz Jr.
+    icon:icons[3,3]
     cost:2e39
     req:lap>=2e38
     passive:multiply yield of :Buildings by 1.03
 
   *russel
     name:George Russell
+    icon:icons[4,3]
     cost:4e39
     req:lap>=4e38
     passive:multiply yield of :Buildings by 1.03
 
   *norris
     name:Lando Norris
+    icon:icons[5,3]
     cost:8e39
     req:lap>=8e38
     passive:multiply yield of :Buildings by 1.03
 
   *piastri
     name:Oscar Piastri
+    icon:icons[6,3]
     cost:2e40
     req:lap>=2e39
     passive:multiply yield of :Buildings by 1.03
