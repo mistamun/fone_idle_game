@@ -294,7 +294,7 @@ Upgrades
 
   *farina
     name:Giuseppe Farina
-    desc:Laptime accelerator <b>+5%</b>.<//><q>Was scared of heights, decided to pilot cars instead of aircraft.</q>
+    desc:Laptime accelerator <b>+5%</b>.<//><q>"Was scared of heights, decided to pilot cars instead of aircraft."</q>
     icon:icons[0,0]
     cost:200
     on earn:hide this
