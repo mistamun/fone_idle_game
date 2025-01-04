@@ -303,6 +303,7 @@ Upgrades
 
   *fangio
     name:Juan Manuel Fangio
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[1,0]
     cost:400
     req:lap>=40
@@ -436,6 +437,7 @@ Upgrades
 
   *jbrabham
     name:Jack Brabham
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[20,0]
     cost:8e8
     req:lap>=8e7
@@ -499,6 +501,7 @@ Upgrades
 
   *ghill
     name:Graham Hill
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[29,0]
     cost:8e11
     req:lap>=8e10
@@ -506,6 +509,7 @@ Upgrades
 
   *clark
     name:Jim Clark
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[30,0]
     cost:2e12
     req:lap>=2e11
@@ -534,6 +538,7 @@ Upgrades
 
   *jstewart
     name:Jackie Stewart
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[34,0]
     cost:4e13
     req:lap>=4e12
@@ -597,6 +602,7 @@ Upgrades
 
   *fittipaldi
     name:Emerson Fittipaldi
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[7,1]
     cost:4e16
     req:lap>=4e15
@@ -653,6 +659,7 @@ Upgrades
 
   *nlauda
     name:Niki Lauda
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[15,1]
     cost:2e19
     req:lap>=2e18
@@ -751,6 +758,7 @@ Upgrades
 
   *piquet
     name:Nelson Piquet
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[29,1]
     cost:8e23
     req:lap>=8e22
@@ -765,6 +773,7 @@ Upgrades
 
   *prost
     name:Alain Prost
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[31,1]
     cost:4e24
     req:lap>=4e23
@@ -807,6 +816,7 @@ Upgrades
 
   *senna
     name:Ayrton Senna
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[1,2]
     cost:4e26
     req:lap>=4e25
@@ -842,6 +852,7 @@ Upgrades
 
   *mschumacher
     name:Michael Schumacher
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[6,2]
     cost:2e28
     req:lap>=2e27
@@ -898,6 +909,7 @@ Upgrades
 
   *hakkinen
     name:Mika Häkkinen
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[14,2]
     cost:8e30
     req:lap>=8e29
@@ -947,6 +959,7 @@ Upgrades
 
   *alonso
     name:Fernando Alonso
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[21,2]
     cost:2e33
     req:lap>=2e32
@@ -975,6 +988,7 @@ Upgrades
 
   *hamilton
     name:Lewis Hamilton
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[25,2]
     cost:4e34
     req:lap>=4e33
@@ -996,6 +1010,7 @@ Upgrades
 
   *vettel
     name:Sebastian Vettel
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[28,2]
     cost:4e35
     req:lap>=4e34
@@ -1031,6 +1046,7 @@ Upgrades
 
   *verstappen
     name:Max Verstappen
+    desc:Laptime accelerator <b>+10%</b>.<//><q>"..."</q>
     icon:icons[33,2]
     cost:2e37
     req:lap>=2e36
