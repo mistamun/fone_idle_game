@@ -7,6 +7,7 @@ Let's make a game!
   version:0.01
 
 Settings
+  background:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/background_standard_v0.01.png
   spritesheet:icons, 55 by 55, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/icons_v0.01.png
   spritesheet:buildingIcons, 100 by 100, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/buildings_v0.01.png
 
