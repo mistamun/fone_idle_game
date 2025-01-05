@@ -189,7 +189,6 @@ Buildings
   *engineer
     name:Engineer
     desc:<//><.><b>Effects:</b> Produces <b>10</b> lps.</><//><.><b>Stats:</b> <b>[engineer]</b> Engineers producing <b>[engineerTotal:ps]</b> lps, each Engineer produces <b>[engineerTotal:ps / engineer]</b> lps.<q>Tunes your cars to the unthinkable degree of detail (actually to the tenth of a millimiter).</q>
-    desc:
     on tick:yield 10 lap
     on tick:yield 10 engineerTotal
     cost:1000 lap
