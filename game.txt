@@ -131,6 +131,33 @@ Resources
     name:Lap
     desc:A lap around a race track.
 
+  *carTotal
+    hidden
+
+  *driverTotal
+    hidden
+
+  *engineerTotal
+    hidden
+
+  *principalTotal
+    hidden
+
+  *sponsorTotal
+    hidden
+
+  *ownerTotal
+    hidden
+
+  *supercomputerTotal
+    hidden
+
+  *simulatorTotal
+    hidden
+
+  *windTunnelTotal
+    hidden
+
 Buttons
   *tyre
     name:Tyre
@@ -147,57 +174,74 @@ Buttons
 Buildings
   *car
     name:Car
-    desc:Goes arounde the track on its own through the power of random motion and quantum mechanics.
+    desc:<//><.><b>Effects:</b> Produces <b>0.1</b> lps.</><//><.><b>Stats:</b> <b>[car]</b> Cars producing <b>[carTotal:ps]</b> lps, each Car produces <b>[carTotal:ps / car]</b> lps.<q>The car goes around the track on its own through the power of random motion and quantum mechanics.</q>
     on tick:yield 0.1 lap
+    on tick:yield 0.1 carTotal
     cost:10 lap
 
   *driver
     name:Driver
-    desc:Aims your cars correctly arounde the corners with purpose.
+    desc:<//><.><b>Effects:</b> Produces <b>1</b> lps.</><//><.><b>Stats:</b> <b>[driver]</b> Drivers producing <b>[driverTotal:ps]</b> lps, each Driver produces <b>[driverTotal:ps / driver]</b> lps.<q>Aims your cars correctly arounde the corners with purpose.</q>
     on tick:yield 1 lap
+    on tick:yield 1 driverTotal
     cost:100 lap
 
   *engineer
     name:Engineer
-    desc:Tunes your cars to the unthinkable degree of detail (actually to the tenth of a millimiter).
+    desc:<//><.><b>Effects:</b> Produces <b>10</b> lps.</><//><.><b>Stats:</b> <b>[engineer]</b> Engineers producing <b>[engineerTotal:ps]</b> lps, each Engineer produces <b>[engineerTotal:ps / engineer]</b> lps.<q>Tunes your cars to the unthinkable degree of detail (actually to the tenth of a millimiter).</q>
+    desc:
     on tick:yield 10 lap
+    on tick:yield 10 engineerTotal
     cost:1000 lap
+    req:500 lap:earned
 
   *principal
     name:Team Principal
-    desc:Keeps your Drivers and Engineers focused on the job, they're easily distracted.
+    desc:<//><.><b>Effects:</b> Produces <b>100</b> lps.</><//><.><b>Stats:</b> <b>[principal]</b> Team Principals producing <b>[principalTotal:ps]</b> lps, each Team Principal produces <b>[principalTotal:ps / principal]</b> lps.<q>Keeps your Drivers and Engineers focused on the job, they're easily distracted.</q>
     on tick:yield 100 lap
+    on tick:yield 100 principalTotal
     cost:10000 lap
+    req:5000 lap:earned
 
   *sponsor
     name:Sponsor
-    desc:A clueless sponsor who's rich and loves the "sport" and has been able to convince his board of directors that this will yield some return in publicity.
+    desc:<//><.><b>Effects:</b> Produces <b>1000</b> lps.</><//><.><b>Stats:</b> <b>[sponsor]</b> Sponsors producing <b>[sponsorTotal:ps]</b> lps, each Sponsor produces <b>[sponsorTotal:ps / sponsor]</b> lps.<q>A clueless sponsor who's rich and loves the "sport" and has been able to convince his board of directors that this will yield some return in publicity.</q>
     on tick:yield 1000 lap
+    on tick:yield 1000 sponsorTotal
     cost:100000 lap
+    req:50000 lap:earned
 
   *owner
     name:Team Owner
-    desc:Some one has to cover that hole in the budget, right?
+    desc:<//><.><b>Effects:</b> Produces <b>10000</b> lps.</><//><.><b>Stats:</b> <b>[owner]</b> Team Owners producing <b>[ownerTotal:ps]</b> lps, each Team Owner produces <b>[ownerTotal:ps / owner]</b> lps.<q>It was either this or golf.</q>
     on tick:yield 10000 lap
+    on tick:yield 10000 ownerTotal
     cost:1000000 lap
+    req:500000 lap:earned
 
   *supercomputer
     name:Supercomputer
-    desc:Unless they're Newey, Engineers need computers to get it done.
+    desc:<//><.><b>Effects:</b> Produces <b>100000</b> lps.</><//><.><b>Stats:</b> <b>[supercomputer]</b> Supercomputers producing <b>[supercomputerTotal:ps]</b> lps, each Supercomputer produces <b>[supercomputerTotal:ps / supercomputer]</b> lps.<q>Unless they're Newey, Engineers need computers to get it done. These are Super!</q>
     on tick:yield 100000 lap
+    on tick:yield 100000 supercomputerTotal
     cost:10000000 lap
+    req:5000000 lap:earned
 
   *simulator
     name:Simulator
-    desc:A very expensive machine to keep your spare Drivers enternained.
+    desc:<//><.><b>Effects:</b> Produces <b>1000000</b> lps.</><//><.><b>Stats:</b> <b>[simulator]</b> Simulators producing <b>[simulatorTotal:ps]</b> lps, each Simulator produces <b>[simulatorTotal:ps / simulator]</b> lps.<q>A very expensive machine to keep your spare Engineers entertained.</q>
     on tick:yield 1000000 lap
+    on tick:yield 100000 simulatorTotal
     cost:100000000 lap
+    req:50000000 lap:earned
 
   *windTunnel
     name:Wind Tunnel
-    desc:A very expensive machine to keep your Engineers and Supercomputers cool in the summer.
+    desc:<//><.><b>Effects:</b> Produces <b>10000000</b> lps.</><//><.><b>Stats:</b> <b>[windTunnel]</b> Wind Tunnels producing <b>[windTunnelTotal:ps]</b> lps, each Wind Tunnel produces <b>[windTunnelTotal:ps / windTunnel]</b> lps.<q>A very expensive machine to keep your Engineers and Supercomputers cool in the summer.
     on tick:yield 10000000 lap
+    on tick:yield 10000000 windTunnelTotal
     cost:1000000000 lap
+    req:500000000 lap:earned
 
 Upgrades
   *discBrakes
