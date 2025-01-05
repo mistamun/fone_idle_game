@@ -113,6 +113,7 @@ Layout
   contains:Upgrades
   header:Upgrades
   names:hide
+  costs:hide
 
 *upgradeButtons
   contains:tag:upgradeSwitcher
