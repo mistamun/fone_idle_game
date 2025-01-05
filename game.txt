@@ -301,7 +301,7 @@ Upgrades
     name:Giuseppe Farina
     desc:Laptime accelerator <b>+5%</b>.<//><q>"Was scared of heights, decided to pilot cars instead of aircraft."</q>
     icon:icons[0,0]
-    iconiconClass
+    icon class:iconClass
     cost:200
     on earn:hide this
     req:lap>=20
