@@ -7,7 +7,7 @@ Let's make a game!
   version:0.01
 
 Settings
-  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/icons.png
+  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/icons_v0.01.png
 
 CSS
 #game {
