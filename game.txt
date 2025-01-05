@@ -93,31 +93,36 @@ CSS
 Layout
 *main
   contains:res, buttons
-  *res
-	contains:Resources
-	class:fullWidth
-  *buttons
-	contains:Buttons
+
+*res
+  contains:Resources
+  class:fullWidth
+
+*buttons
+  contains:Buttons
+
 *store
-contains:buildings, upgrades, upgradeButtons
-  *buildings
-	contains:BulkDisplay, Buildings
-	header:Buildings
-	tooltip origin:left
-  *upgrades
-	contains:Upgrades
-	header:Upgrades
-	costs:hide
-	names:hide
-	*upgradeButtons
-	contains:tag:upgradeSwitcher
+  contains:buildings, upgrades, upgradeButtons
+
+*buildings
+  contains:BulkDisplay, Buildings
+  header:Buildings
+  tooltip origin:left
+
+*upgrades
+  contains:Upgrades
+  header:Upgrades
+
+*upgradeButtons
+  contains:tag:upgradeSwitcher
+
 *achbox
-	header:Achievements
-	contains:tag:achievement, tag:deepachievement
-	class:achcss
-	tooltip origin:top
-	names:hide
-	costs:hide
+  header:Achievements
+  contains:tag:achievement, tag:deepachievement
+  class:achcss
+  tooltip origin:top
+  names:hide
+  costs:hide
 
 Resources
   *lap
