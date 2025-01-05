@@ -112,6 +112,7 @@ Layout
 *upgrades
   contains:Upgrades
   header:Upgrades
+  names:hide
 
 *upgradeButtons
   contains:tag:upgradeSwitcher
