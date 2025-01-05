@@ -8,6 +8,7 @@ Let's make a game!
 
 Settings
   spritesheet:icons, 55 by 55, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/icons_v0.01.png
+  spritesheet:buildingIcons, 100 by 100, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/buildings_v0.01.png
 
 CSS
 #game {
@@ -88,6 +89,11 @@ CSS
 .iconClass{
     height:55px;
     width:55px;
+}
+
+.buildingIconClass{
+    height:100px;
+    width:100px;
 }
 
 Layout
@@ -175,6 +181,8 @@ Buildings
   *car
     name:Car
     desc:<//><.><b>Effects:</b> Produces <b>0.1</b> lps.</><//><.><b>Stats:</b> <b>[car]</b> Cars producing <b>[carTotal:ps]</b> lps, each Car produces <b>[carTotal:ps / car]</b> lps.<q>The car goes around the track on its own through the power of random motion and quantum mechanics.</q>
+    icon:buildingIcons[0,0]
+    icon class:buildingIconClass
     on tick:yield 0.1 lap
     on tick:yield 0.1 carTotal
     cost:10 lap
@@ -182,6 +190,8 @@ Buildings
   *driver
     name:Driver
     desc:<//><.><b>Effects:</b> Produces <b>1</b> lps.</><//><.><b>Stats:</b> <b>[driver]</b> Drivers producing <b>[driverTotal:ps]</b> lps, each Driver produces <b>[driverTotal:ps / driver]</b> lps.<q>Aims your cars correctly arounde the corners with purpose.</q>
+    icon:buildingIcons[1,0]
+    icon class:buildingIconClass
     on tick:yield 1 lap
     on tick:yield 1 driverTotal
     cost:100 lap
@@ -189,6 +199,8 @@ Buildings
   *engineer
     name:Engineer
     desc:<//><.><b>Effects:</b> Produces <b>10</b> lps.</><//><.><b>Stats:</b> <b>[engineer]</b> Engineers producing <b>[engineerTotal:ps]</b> lps, each Engineer produces <b>[engineerTotal:ps / engineer]</b> lps.<q>Tunes your cars to the unthinkable degree of detail (actually to the tenth of a millimiter).</q>
+    icon:buildingIcons[2,0]
+    icon class:buildingIconClass
     on tick:yield 10 lap
     on tick:yield 10 engineerTotal
     cost:1000 lap
@@ -197,6 +209,8 @@ Buildings
   *principal
     name:Team Principal
     desc:<//><.><b>Effects:</b> Produces <b>100</b> lps.</><//><.><b>Stats:</b> <b>[principal]</b> Team Principals producing <b>[principalTotal:ps]</b> lps, each Team Principal produces <b>[principalTotal:ps / principal]</b> lps.<q>Keeps your Drivers and Engineers focused on the job, they're easily distracted.</q>
+    icon:buildingIcons[3,0]
+    icon class:buildingIconClass
     on tick:yield 100 lap
     on tick:yield 100 principalTotal
     cost:10000 lap
@@ -205,6 +219,8 @@ Buildings
   *sponsor
     name:Sponsor
     desc:<//><.><b>Effects:</b> Produces <b>1000</b> lps.</><//><.><b>Stats:</b> <b>[sponsor]</b> Sponsors producing <b>[sponsorTotal:ps]</b> lps, each Sponsor produces <b>[sponsorTotal:ps / sponsor]</b> lps.<q>A clueless sponsor who's rich and loves the "sport" and has been able to convince his board of directors that this will yield some return in publicity.</q>
+    icon:buildingIcons[4,0]
+    icon class:buildingIconClass
     on tick:yield 1000 lap
     on tick:yield 1000 sponsorTotal
     cost:100000 lap
