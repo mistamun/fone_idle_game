@@ -10,6 +10,7 @@ Settings
   background:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/background_standard_v0.01.png
   spritesheet:icons, 55 by 55, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/icons_v0.01.png
   spritesheet:buildingIcons, 100 by 100, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/buildings_v0.01.png
+  spritesheet:tyreIcons, 256 by 256, https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/tyres_v0.01.png
 
 CSS
 #game {
@@ -175,7 +176,13 @@ Buttons
     end
     class:bigButton radiusSquare
     icon class:radiusSquare
-    icon:https://raw.githubusercontent.com/mistamun/fone_idle_game/refs/heads/main/assets/tyre_pi_yellow.png
+    icon:
+        if (car<10)
+            tyreIcons[0,0]
+        else
+            tyreIcons[1,0]
+        end
+    end
     no text
 
 Buildings
@@ -230,6 +237,8 @@ Buildings
   *owner
     name:Team Owner
     desc:<//><.><b>Effects:</b> Produces <b>10000</b> lps.</><//><.><b>Stats:</b> <b>[owner]</b> Team Owners producing <b>[ownerTotal:ps]</b> lps, each Team Owner produces <b>[ownerTotal:ps / owner]</b> lps.<q>It was either this or golf.</q>
+    icon:buildingIcons[5,0]
+    icon class:buildingIconClass
     on tick:yield 10000 lap
     on tick:yield 10000 ownerTotal
     cost:1000000 lap
@@ -238,6 +247,8 @@ Buildings
   *supercomputer
     name:Supercomputer
     desc:<//><.><b>Effects:</b> Produces <b>100000</b> lps.</><//><.><b>Stats:</b> <b>[supercomputer]</b> Supercomputers producing <b>[supercomputerTotal:ps]</b> lps, each Supercomputer produces <b>[supercomputerTotal:ps / supercomputer]</b> lps.<q>Unless they're Newey, Engineers need computers to get it done. These are Super!</q>
+    icon:buildingIcons[6,0]
+    icon class:buildingIconClass
     on tick:yield 100000 lap
     on tick:yield 100000 supercomputerTotal
     cost:10000000 lap
@@ -246,6 +257,8 @@ Buildings
   *simulator
     name:Simulator
     desc:<//><.><b>Effects:</b> Produces <b>1000000</b> lps.</><//><.><b>Stats:</b> <b>[simulator]</b> Simulators producing <b>[simulatorTotal:ps]</b> lps, each Simulator produces <b>[simulatorTotal:ps / simulator]</b> lps.<q>A very expensive machine to keep your spare Engineers entertained.</q>
+    icon:buildingIcons[7,0]
+    icon class:buildingIconClass
     on tick:yield 1000000 lap
     on tick:yield 100000 simulatorTotal
     cost:100000000 lap
@@ -254,6 +267,8 @@ Buildings
   *windTunnel
     name:Wind Tunnel
     desc:<//><.><b>Effects:</b> Produces <b>10000000</b> lps.</><//><.><b>Stats:</b> <b>[windTunnel]</b> Wind Tunnels producing <b>[windTunnelTotal:ps]</b> lps, each Wind Tunnel produces <b>[windTunnelTotal:ps / windTunnel]</b> lps.<q>A very expensive machine to keep your Engineers and Supercomputers cool in the summer.
+    icon:buildingIcons[8,0]
+    icon class:buildingIconClass
     on tick:yield 10000000 lap
     on tick:yield 10000000 windTunnelTotal
     cost:1000000000 lap
