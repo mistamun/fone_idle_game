@@ -172,7 +172,6 @@ Buttons
     desc:Click this to rotate your tyres.
     on click:
       yield 0.1 lap
-      mainTyre:clicks=mainTyre:clicks+1
       anim Rotate
     end
     class:bigButton radiusSquare
@@ -184,15 +183,18 @@ Buttons
 
   *firstTyre
     icon:tyreIcons[0,0]
+    on click:mainTyre:clicks=mainTyre:clicks+1
     req:lap<10
 
   *secondTyre
     icon:tyreIcons[1,0]
+    on click:mainTyre:clicks=mainTyre:clicks+1
     req:lap>=10
     req:lap<100
 
   *thirdTyre
     icon:tyreIcons[2,0]
+    on click:mainTyre:clicks=mainTyre:clicks+1
     req:lap>=100
     req:lap<1000
 
