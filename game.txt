@@ -182,6 +182,10 @@ Buttons
     desc:Click this to rotate your tyres.
     icon:tyreIcons[0,0]
     shown
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
 
   *secondTyre
     name:Firestone Tyre
@@ -192,6 +196,10 @@ Buttons
         hide firstTyre
         show secondTyre
       end
+    end
+    on click:
+      yield 1 lap
+      anim Rotate
     end
 
   *thirdTyre
@@ -204,6 +212,10 @@ Buttons
         show thirdTyre
       end
     end
+    on click:
+      yield 10 lap
+      anim Rotate
+    end
 
   *fourthTyre
     name:GoodYear Eagle Tyre
@@ -214,6 +226,10 @@ Buttons
         hide thirdTyre
         show fourthTyre
       end
+    end
+    on click:
+      yield 100 lap
+      anim Rotate
     end
 
   *fifthTyre
@@ -226,6 +242,10 @@ Buttons
         show fifthTyre
       end
     end
+    on click:
+      yield 1e3 lap
+      anim Rotate
+    end
 
   *sixthTyre
     name:Bridgestone Potenza Tyre
@@ -236,6 +256,10 @@ Buttons
         hide fifthTyre
         show sixthTyre
       end
+    end
+    on click:
+      yield 1e4 lap
+      anim Rotate
     end
 
   *seventhTyre
@@ -248,6 +272,10 @@ Buttons
         show seventhTyre
       end
     end
+    on click:
+      yield 1e5 lap
+      anim Rotate
+    end
 
   *eighthTyre
     name:White Pirelli Tyre
@@ -258,6 +286,10 @@ Buttons
         hide seventhTyre
         show eighthTyre
       end
+    end
+    on click:
+      yield 1e6 lap
+      anim Rotate
     end
 
   *ninethTyre
@@ -270,6 +302,10 @@ Buttons
         show ninethTyre
       end
     end
+    on click:
+      yield 1e7 lap
+      anim Rotate
+    end
 
   *tenthTyre
     name:Red Pirelli Tyre
@@ -280,6 +316,10 @@ Buttons
         hide ninethTyre
         show tenthTyre
       end
+    end
+    on click:
+      yield 1e8 lap
+      anim Rotate
     end
 
 Buildings
@@ -294,7 +334,7 @@ Buildings
 
   *driver
     name:Driver
-    desc:<//><.><b>Effects:</b> Produces <b>1</b> lps.</><//><.><b>Stats:</b> <b>[driver]</b> Drivers producing <b>[driverTotal:ps]</b> lps, each Driver produces <b>[driverTotal:ps / driver]</b> lps.<q>Aims your cars correctly arounde the corners with purpose.</q>
+    desc:<//><.><b>Effects:</b> Produces <b>1</b> lps.</><//><.><b>Stats:</b> <b>[driver]</b> Drivers producing <b>[driverTotal:ps]</b> lps, each Driver produces <b>[driverTotal:ps / driver]</b> lps.<q>Aims your cars correctly around the corners with purpose.</q>
     icon:buildingIcons[1,0]
     icon class:buildingIconClass
     on tick:yield 1 lap
