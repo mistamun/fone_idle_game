@@ -178,7 +178,19 @@ Buttons
     icon class:radiusSquare
     no text
     icon:tyreIcons[0,0]
-    req:lap>10
+
+  *secondTyre
+    name:Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    req:1 lap:earned
 
 Buildings
   *car
