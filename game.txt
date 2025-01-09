@@ -178,7 +178,7 @@ Buttons
     icon class:radiusSquare
     no text
     icon:tyreIcons[0,0]
-    req:lap<10
+    req:lap>10
 
 Buildings
   *car
