@@ -167,7 +167,7 @@ Resources
     hidden
 
 Buttons
-  *TEMPLATE
+  *firstTyre
     name:Tyre
     desc:Click this to rotate your tyres.
     on click:
@@ -177,24 +177,25 @@ Buttons
     class:bigButton radiusSquare
     icon class:radiusSquare
     no text
-
-  *mainTyre
-    hidden
-
-  *firstTyre
     icon:tyreIcons[0,0]
-    on click:mainTyre:clicks=mainTyre:clicks+1
     req:lap<10
 
   *secondTyre
+    name:Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
     icon:tyreIcons[1,0]
-    on click:mainTyre:clicks=mainTyre:clicks+1
     req:lap>=10
     req:lap<100
 
   *thirdTyre
     icon:tyreIcons[2,0]
-    on click:mainTyre:clicks=mainTyre:clicks+1
     req:lap>=100
     req:lap<1000
 
