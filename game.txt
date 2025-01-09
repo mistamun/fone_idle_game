@@ -186,11 +186,17 @@ Buttons
       yield 0.1 lap
       anim Rotate
     end
+    on tick:
+      if lap:earned>10:
+          hide firstTyre
+          show secondTyre
+      end
+    end
     class:bigButton radiusSquare
     icon class:radiusSquare
     no text
     icon:tyreIcons[1,0]
-    req:5 lap:earned
+    hidden
 
 Buildings
   *car
