@@ -180,52 +180,6 @@ Buttons
     icon:tyreIcons[0,0]
     req:lap<10
 
-  *secondTyre
-    name:Tyre
-    desc:Click this to rotate your tyres.
-    on click:
-      yield 0.1 lap
-      anim Rotate
-    end
-    class:bigButton radiusSquare
-    icon class:radiusSquare
-    no text
-    icon:tyreIcons[1,0]
-    req:lap>=10
-    req:lap<100
-
-  *thirdTyre
-    icon:tyreIcons[2,0]
-    req:lap>=100
-    req:lap<1000
-
-  *fourthTyre
-    icon:tyreIcons[3,0]
-
-  *fifthTyre
-    icon:tyreIcons[0,1]
-
-  *sixthTyre
-    icon:tyreIcons[1,1]
-
-  *seventhTyre
-    icon:tyreIcons[2,1]
-
-  *eighthTyre
-    icon:tyreIcons[3,1]
-
-  *ninethTyre
-    icon:tyreIcons[0,2]
-
-  *tenthTyre
-    icon:tyreIcons[1,2]
-
-  *eleventhTyre
-    icon:tyreIcons[2,2]
-
-  *twelvethTyre
-    icon:tyreIcons[3,2]
-
 Buildings
   *car
     name:Car
