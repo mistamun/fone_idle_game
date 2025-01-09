@@ -178,6 +178,7 @@ Buttons
     icon class:radiusSquare
     no text
     icon:tyreIcons[0,0]
+    shown
 
   *secondTyre
     name:Firestone Tyre
@@ -187,9 +188,199 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>10:
-          hide firstTyre
-          show secondTyre
+      if lap:earned>10
+        hide firstTyre
+        show secondTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *thirdTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>100
+        hide secondTyre
+        show thirdTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *fourthTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1000
+        hide thirdTyre
+        show fourthTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *fifthTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e4
+        hide fourthTyre
+        show fifthTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *sixthTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e5
+        hide fifthTyre
+        show sixthTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *seventhTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e6
+        hide sixthTyre
+        show seventhTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *eighthTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e7
+        hide seventhTyre
+        show eighthTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *ninethTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e8
+        hide eighthTyre
+        show ninethTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *tenthTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e9
+        hide ninethTyre
+        show tenthTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *eleventhTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e10
+        hide tenthTyre
+        show eleventhTyre
+      end
+    end
+    class:bigButton radiusSquare
+    icon class:radiusSquare
+    no text
+    icon:tyreIcons[1,0]
+    hidden
+
+  *twelvethTyre
+    name:Firestone Tyre
+    desc:Click this to rotate your tyres.
+    on click:
+      yield 0.1 lap
+      anim Rotate
+    end
+    on tick:
+      if lap:earned>1e11
+        hide eleventhTyre
+        show twelvethTyre
       end
     end
     class:bigButton radiusSquare
