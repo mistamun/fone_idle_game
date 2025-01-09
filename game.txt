@@ -188,7 +188,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>10
+      if (lap:earned>10)
         hide firstTyre
         show secondTyre
       end
@@ -207,7 +207,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>100
+      if (lap:earned>100)
         hide secondTyre
         show thirdTyre
       end
@@ -226,7 +226,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1000
+      if (lap:earned>1000)
         hide thirdTyre
         show fourthTyre
       end
@@ -245,7 +245,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e4
+      if (lap:earned>1e4)
         hide fourthTyre
         show fifthTyre
       end
@@ -264,7 +264,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e5
+      if (lap:earned>1e5)
         hide fifthTyre
         show sixthTyre
       end
@@ -283,7 +283,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e6
+      if (lap:earned>1e6)
         hide sixthTyre
         show seventhTyre
       end
@@ -302,7 +302,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e7
+      if (lap:earned>1e7)
         hide seventhTyre
         show eighthTyre
       end
@@ -321,7 +321,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e8
+      if (lap:earned>1e8)
         hide eighthTyre
         show ninethTyre
       end
@@ -340,7 +340,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e9
+      if (lap:earned>1e9)
         hide ninethTyre
         show tenthTyre
       end
@@ -359,7 +359,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e10
+      if (lap:earned>1e10)
         hide tenthTyre
         show eleventhTyre
       end
@@ -378,7 +378,7 @@ Buttons
       anim Rotate
     end
     on tick:
-      if lap:earned>1e11
+      if (lap:earned>1e11)
         hide eleventhTyre
         show twelvethTyre
       end
