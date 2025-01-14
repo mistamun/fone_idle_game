@@ -178,10 +178,13 @@ Buttons
     hidden
 
   *firstTyre
-    name:Classic Tyre
-    desc:Click this to rotate your tyres.
+    name:Classic Pirelli Tyre
+    desc:Was was invented first? Fire or the wheel? The wheel, obviously. And this one is perfect, the last wheel we'll ever need. Please rotate it regularly.
     icon:tyreIcons[0,0]
-    shown
+    on tick:
+      if (have wheel)
+        show firstTyre
+      end
     on click:
       yield 0.1 lap
       anim Rotate
@@ -189,7 +192,7 @@ Buttons
 
   *secondTyre
     name:Firestone Tyre
-    desc:Click this to rotate your tyres.
+    desc:After the wheel was invented, fire was invented. After fire was invented, a new wheel was invented, with fire. Remember to rotate it regularly.
     icon:tyreIcons[1,0]
     on tick:
       if (lap:earned>10)
@@ -204,8 +207,8 @@ Buttons
 
   *thirdTyre
     name:GoodYear Tyre
-    desc:Click this to rotate your tyres.
-    icon:tyreIcons[2,0]
+    desc:Don't forget to rotate this tyre regularly or your year won't be very good.
+    icon:tyreIcons[0,1]
     on tick:
       if (lap:earned>100)
         hide secondTyre
@@ -218,9 +221,9 @@ Buttons
     end
 
   *fourthTyre
-    name:GoodYear Eagle Tyre
-    desc:Click this to rotate your tyres.
-    icon:tyreIcons[3,0]
+    name:Pirelli Tyre
+    desc:Created by Mr. Pirelli after he played https://letmegooglethat.com/?q=perfect+circle+competition for a year. Rotate it regularly to keep it perfectly round.
+    icon:tyreIcons[2,0]
     on tick:
       if (lap:earned>1000)
         hide thirdTyre
@@ -233,9 +236,9 @@ Buttons
     end
 
   *fifthTyre
-    name:Yellow GoodYear Eagle Tyre
-    desc:Click this to rotate your tyres.
-    icon:tyreIcons[0,1]
+    name:Pirelli PZero Tyre
+    desc:Same as before but doesn't need rotating to keep its perfect shape. Although probably not wise to test it.
+    icon:tyreIcons[3,0]
     on tick:
       if (lap:earned>1e4)
         hide fourthTyre
@@ -248,8 +251,8 @@ Buttons
     end
 
   *sixthTyre
-    name:Bridgestone Potenza Tyre
-    desc:Click this to rotate your tyres.
+    name:GoodYear Eagle Tyre
+    desc:Click to rotate your tyres.
     icon:tyreIcons[1,1]
     on tick:
       if (lap:earned>1e5)
@@ -263,8 +266,8 @@ Buttons
     end
 
   *seventhTyre
-    name:Michelin Tyre
-    desc:Click this to rotate your tyres.
+    name:Yellow GoodYear Eagle Tyre
+    desc:Click to rotate your tyres.
     icon:tyreIcons[2,1]
     on tick:
       if (lap:earned>1e6)
@@ -278,9 +281,9 @@ Buttons
     end
 
   *eighthTyre
-    name:White Pirelli Tyre
-    desc:Click this to rotate your tyres.
-    icon:tyreIcons[0,2]
+    name:Bridgestone Potenza Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[3,1]
     on tick:
       if (lap:earned>1e7)
         hide seventhTyre
@@ -293,9 +296,9 @@ Buttons
     end
 
   *ninethTyre
-    name:White Pirelli Tyre
-    desc:Click this to rotate your tyres.
-    icon:tyreIcons[3,1]
+    name:Michelin Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[0,2]
     on tick:
       if (lap:earned>1e8)
         hide eighthTyre
@@ -308,8 +311,8 @@ Buttons
     end
 
   *tenthTyre
-    name:Red Pirelli Tyre
-    desc:Click this to rotate your tyres.
+    name:White Pirelli Tyre
+    desc:Click to rotate your tyres.
     icon:tyreIcons[1,2]
     on tick:
       if (lap:earned>1e9)
@@ -322,6 +325,36 @@ Buttons
       anim Rotate
     end
 
+  *elenventhTyre
+    name:Yellow Pirelli Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[2,2]
+    on tick:
+      if (lap:earned>1e10)
+        hide tenthTyre
+        show elenventhTyre
+      end
+    end
+    on click:
+      yield 1e9 lap
+      anim Rotate
+    end
+
+  *twelfthTyre
+    name:Red Pirelli Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[3,2]
+    on tick:
+      if (lap:earned>1e11)
+        hide elenventhTyre
+        show twelfthTyre
+      end
+    end
+    on click:
+      yield 1e10 lap
+      anim Rotate
+    end
+
 Buildings
   *car
     name:Car
@@ -331,6 +364,7 @@ Buildings
     on tick:yield 0.1 lap
     on tick:yield 0.1 carTotal
     cost:10 lap
+    req:1 lap:earned and have veeTwelve
 
   *driver
     name:Driver
@@ -340,6 +374,7 @@ Buildings
     on tick:yield 1 lap
     on tick:yield 1 driverTotal
     cost:100 lap
+    req:50 lap:earned
 
   *engineer
     name:Engineer
@@ -412,6 +447,20 @@ Buildings
     req:500000000 lap:earned
 
 Upgrades
+  *wheel
+    name:The Wheel
+    desc:Eons ago, a tired human leaned against a huge round boulder and it rolled away as if it was nothing. They thought "huh?" but forgot about it. A few thousand years later the same thing happened but the boulder rolled over someone's toes. Then they paid attention and invented the wheel.
+    icon:icons[0,4]
+    icon class:iconClass
+    on earn:hide this
+
+  *veeTwelve
+    name:The V12
+    desc:And God created the Garden of Eden and there he planted one seed, it sprouted into Their most perfect creation. The end.
+    icon:icons[1,4]
+    icon class:iconClass
+    on earn:hide this
+
   *discBrakes
     name:Brake discs and pads
     desc:Glowing brakes gain make the car faster because of how cool they look.
