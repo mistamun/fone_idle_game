@@ -185,6 +185,7 @@ Buttons
       if (have wheel)
         show firstTyre
       end
+    end
     on click:
       yield 0.1 lap
       anim Rotate
