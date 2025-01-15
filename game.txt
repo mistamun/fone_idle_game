@@ -252,7 +252,7 @@ Buttons
 
   *sixthTyre
     name:GoodYear Eagle Tyre
-    desc:Click to rotate your tyres.
+    desc:Someone at the GoodYear factory looked at this slick tyre, realized it was bald and so called it "Eagle". The most American of the tyres was born. Protect your freedom, rotate this tyre.
     icon:tyreIcons[1,1]
     on tick:
       if (lap:earned>1e5)
@@ -267,7 +267,7 @@ Buttons
 
   *seventhTyre
     name:Yellow GoodYear Eagle Tyre
-    desc:Click to rotate your tyres.
+    desc:<q>There look great but can you make it pop? Oh and can you rotate them for me please? Thank you.</q>
     icon:tyreIcons[2,1]
     on tick:
       if (lap:earned>1e6)
@@ -328,7 +328,7 @@ Buttons
   *elenventhTyre
     name:Yellow Pirelli Tyre
     desc:Click to rotate your tyres.
-    icon:tyreIcons[2,2]
+    icon:tyreIcons[3,2]
     on tick:
       if (lap:earned>1e10)
         hide tenthTyre
@@ -343,7 +343,7 @@ Buttons
   *twelfthTyre
     name:Red Pirelli Tyre
     desc:Click to rotate your tyres.
-    icon:tyreIcons[3,2]
+    icon:tyreIcons[2,2]
     on tick:
       if (lap:earned>1e11)
         hide elenventhTyre
@@ -352,6 +352,51 @@ Buttons
     end
     on click:
       yield 1e10 lap
+      anim Rotate
+    end
+
+  *thirteenthTyre
+    name:18 inch Pirelli Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[2,3]
+    on tick:
+      if (lap:earned>1e12)
+        hide elenventhTyre
+        show twelfthTyre
+      end
+    end
+    on click:
+      yield 1e11 lap
+      anim Rotate
+    end
+
+  *intermediateTyre
+    name:Intermediate Pirelli Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[0,3]
+    on tick:
+      if (lap:earned>1e12)
+        hide elenventhTyre
+        show twelfthTyre
+      end
+    end
+    on click:
+      yield 1 lap
+      anim Rotate
+    end
+
+  *fullWetTyre
+    name:Full Wet Pirelli Tyre
+    desc:Click to rotate your tyres.
+    icon:tyreIcons[1,3]
+    on tick:
+      if (lap:earned>1e12)
+        hide elenventhTyre
+        show twelfthTyre
+      end
+    end
+    on click:
+      yield 1 lap
       anim Rotate
     end
 
