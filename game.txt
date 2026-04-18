@@ -65,7 +65,8 @@ CSS
 #box-buildings,
 #box-upgrades,
 #box-achbox,
-#box-res {
+#box-res,
+#box-news {
 	backdrop-filter: blur(4px);
 }
 #box-store,
@@ -89,6 +90,49 @@ CSS
 	z-index: 30;
 	font-weight: 700;
 	font-size: 16px;
+}
+
+#box-news {
+	position: fixed;
+	top: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 46%;
+	height: 28px;
+	padding: 0;
+	background: linear-gradient(180deg, rgba(5, 8, 12, 0.92), rgba(16, 22, 30, 0.84));
+	border: 1px solid rgba(191, 207, 219, 0.45);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+	overflow: hidden;
+	z-index: 35;
+}
+
+#box-news .box-header,
+#box-news .box-footer {
+	display: none;
+}
+
+#box-news #log {
+	background: transparent;
+	border: 0;
+	height: 100%;
+	padding: 0;
+}
+
+#box-news #logInner {
+	height: 100%;
+	line-height: 28px;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #ffd775;
+	font-size: 12px;
+	font-weight: 700;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+	padding: 0 10px;
+}
+
+#box-news #logInner br {
+	display: none;
 }
 
 #box-store {
@@ -212,15 +256,25 @@ CSS
 	#box-res {
 		font-size: 14px;
 	}
+	#box-news {
+		width: 56%;
+	}
+	#box-news #logInner {
+		font-size: 11px;
+	}
 }
 
 Layout
 *main
-  contains:res, buttons
+  contains:res, news, buttons
 
 *res
   contains:Resources
   class:fullWidth
+
+*news
+  contains:Log
+  class:newsTicker
 
 *buttons
   contains:Buttons
@@ -281,6 +335,36 @@ Resources
 
   *windTunnelTotal
     hidden
+
+  *newsCycle
+    hidden
+    starts at 9
+    on tick:yield 1 newsCycle
+    on tick:
+      if (newsCycle=10)
+        clear log
+        log Race Control: Track limits at Turn 4 under review.
+      end
+      if (newsCycle=20)
+        clear log
+        log Paddock rumor: your engineers found another tenth in clean air.
+      end
+      if (newsCycle=30)
+        clear log
+        log Team radio: push now, tyres are finally in the window.
+      end
+      if (newsCycle=40)
+        clear log
+        log Pit wall: sponsor requests more overtakes for the cameras.
+      end
+      if (newsCycle=50)
+        clear log
+        log Steward note: excessive wheelspin may cause lap inflation.
+      end
+      if (newsCycle=60)
+        lose 60 newsCycle
+      end
+    end
 
 Buttons
   *TEMPLATE
