@@ -338,31 +338,30 @@ Resources
 
   *newsCycle
     hidden
-    starts at 9
     on tick:yield 1 newsCycle
     on tick:
-      if (newsCycle=10)
+      if (newsCycle=1)
         clear log
         log Race Control: Track limits at Turn 4 under review.
       end
-      if (newsCycle=20)
+      if (newsCycle=11)
         clear log
         log Paddock rumor: your engineers found another tenth in clean air.
       end
-      if (newsCycle=30)
+      if (newsCycle=21)
         clear log
         log Team radio: push now, tyres are finally in the window.
       end
-      if (newsCycle=40)
+      if (newsCycle=31)
         clear log
         log Pit wall: sponsor requests more overtakes for the cameras.
       end
-      if (newsCycle=50)
+      if (newsCycle=41)
         clear log
         log Steward note: excessive wheelspin may cause lap inflation.
       end
-      if (newsCycle=60)
-        lose 60 newsCycle
+      if (newsCycle=51)
+        lose 51 newsCycle
       end
     end
 
